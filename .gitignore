@@ -1,0 +1,15 @@
+*~
+.emacs.*
+gen
+.\#*
+lint.xml
+proguard
+*.iml
+build
+app/build
+local.properties
+.idea
+.DS_Store
+.classpath
+.project
+.gradle

@@ -1,0 +1,22 @@
+// This is the plugin that lets us runs jshell in the gradle context
+plugins {
+    id "net.java.openjdk.shinyafox.jshell.gradle.plugin" version "1.0.4"
+}
+
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'java-library'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+// In this section you declare the dependencies themselves
+dependencies {
+    // here's a library we want to use in the shell
+    api 'org.apache.commons:commons-math3:3.6.1'
+}
+
+
